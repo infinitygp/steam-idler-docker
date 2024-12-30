@@ -1,0 +1,8 @@
+services:
+  idler:
+    image: infinitygp/steam-idler:latest
+    build: .
+    container_name: steam-idler
+    volumes:
+      - ./config:/app/config
+    restart: unless-stopped
